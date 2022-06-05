@@ -1,0 +1,32 @@
+.status-bar{
+    display: flex;
+    justify-content: center;
+    /* flex를 이용해서 한줄로 만들어준다 */
+    /* justify-content를 이용해서 배치를 변경 */
+    padding: 5px 3px;
+}
+.status-bar__column{
+    width: 33%;
+}
+/* status-bar의 가로를 33%씩 고정 */
+.status-bar__column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+/* 두번째 status-bar__column을 중앙에 배치 */
+.status-bar__column:first-child span{
+    margin-right: 3px;
+}
+.status-bar__column:last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* 마지막 status-bar__column을 맨끝에 배치 */
+.status-bar__column .fa-battery-quarter{
+    margin: 0px 5px;
+}
+/* 불러온 링크 아이콘의 클래스의 마진을 줘서 보기좋게 배치 */
+.status-bar__column .fa-lock{
+    margin-right: 5px;
+}

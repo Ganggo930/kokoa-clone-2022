@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- link:css 타이핑 -->
+    <!-- 주소 수정(파일이 있는 주소) -->
+    <title>Welcome to KokoaTalk</title>
+</head>
+<body>
+    <!-- top -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+            <!-- To DO: Wifi Icon -->
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <i class="fa-solid fa-lock"></i>
+            <!-- Lock Icon -->
+            <span>110%</span>
+            <i class="fa-solid fa-battery-quarter fa-lg"></i>
+            <!-- Battery Icon -->
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <!-- Lightning Icon -->
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+        <p class="welcome-header__text">If you have a kokoa Account, log in with your email or phone number</p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+        <!-- form은 두가지 속성이 있다. -->
+        <!-- action(어떠한 페이지로 보낼 것인지 지정할 수 있다), method(어떠한 페이지로 데이터를 보낼 것인지 지정할 수 있다) -->
+        <!-- method에서는 2가지 방법이 있다 -->
+        <!-- post(백엔드 서버에 정보를 전송), get(보안에 취약하고 url에 포함되어도 상관없는 정보들을 보낼 때 사용한다) -->
+        <input name="username" required type="text" placeholder="Email or phone number" />
+        <!-- name이라는 식별가능한 username을 준다 -->
+        <!-- required는 필수입력 -->
+        <input name="password" type="text" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <a href="#">Find kokoa Account or Password</a>
+    </form>
+    <script src="https://kit.fontawesome.com/6efb76a38e.js" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- 아이콘을 사용하기 위해서 자바스크립트 사용-웹사이트 링크 https://fontawesome.com/ , https://heroicons.dev/ 사이트 이용 -->

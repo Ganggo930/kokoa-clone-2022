@@ -1,0 +1,10 @@
+@import "reset.css";
+@import "variables.css";
+@import "components/status-bar.css";
+@import "screens/login.css";
+/* 코딩을 할 때 기본으로 적용해야 할 설정 */
+/* html에서 css를 링크했을 때 같이 적용된다 */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family를 사용해서 내가 사용하고 싶은 폰트를 지정(apple이 없다면 blinkmac 다음다음) */
+}
